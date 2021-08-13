@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg py-5">
+        <div class="container">
+            <img class="logo" src="images/logo2x.png" alt="">
+            <a class="navbar-brand" href="#">Weather</a>
+            <button class="navbar-toggler bg-info" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link home rounded-pill px-4" href="#">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill mx-3 px-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-pill px-4" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill mx-3 px-4" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link rounded-pill px-4" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-abs  py-3">
+        <div class="container">
+            <form class="find-location">
+                <input type="text" class="w-100 rounded-pill" placeholder="Find your location..." id="search">
+                <input type="button" class="btn-info px-4 btn-lg rounded-pill" value="Find" id="submit">
+            </form>
+
+        </div>
+
+
+    </div>
+    <div class="forecast">
+        <div class="container info-position">
+            <div class="row">
+                <div class="col-md-4 bg-weather rounded-left">
+                    <div class="d-flex forecast-header">
+                        <div id="first-day"></div>
+                        <div class="ml-auto" id="first-date"></div>
+                    </div>
+                    <div id="city" class="my-4 pb-3 ml-4"></div>
+                    <div id="firstDay-weather" class="degree ml-4 py-3 d-flex">
+
+                     
+                    </div>
+                    <div id="atmosphere" class="custom ml-4 pt-3"> </div>
+                    <span class="px-3"><img class="px-2" src="images/icon-umberella.png" alt="">20%</span>
+                    <span class="px-3"><img class="px-2" src="images/icon-wind.png" alt="">18km/h</span>
+                    <span class="px-3"><img class="px-2" src="images/icon-compass.png" alt="">East</span>
+                </div>
+                <div class="col-md-4 bg-weather-middle">
+                    <div id="second-day" class="text-center forecast-header"></div>
+                    <div id="weather-img2" class="text-center mt-5 mb-4"></div>
+                    <div id="max-temp2" class="degree-sm text-center mx-auto ">
+
+                      
+
+                    </div>
+                    <div id="min-temp2" class="text-center"> </div>
+                    <div id="atmosphere2" class="custom  pt-3 text-center"> </div>
+                </div>
+                <div class="col-md-4 bg-weather rounded-right">
+                    <div id="third-day" class="text-center forecast-header"></div>
+                    <div id="weather-img3" class="text-center mt-5 mb-4"></div>
+                    <div id="max-temp3" class="degree-sm text-center mx-auto ">
+
+                       
+
+
+                    </div>
+                    <div id="min-temp3" class="text-center"> </div>
+                    <div id="atmosphere3" class="custom  pt-3 text-center"> </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg-footer text-center py-5">
+        <div class="container">
+            
+                <!-- <div class="col-md-8 mb-3">
+                    <form class="find-location">
+                        <input type="text" class="w-100 rounded-pill" placeholder="Find your location..." id="search">
+                        <input type="button" class="btn-info px-4 btn-lg rounded-pill" value="Subscribe" id="submit">
+                    </form>
+
+                </div> -->
+
+                <div class="text-center social-links">
+                   <a href="#"> <i class="fab fa-facebook-f icons-brand p-3 rounded-circle"></i></a>
+                    <a href="#"><i class="fab fa-twitter icons-brand p-3 rounded-circle"></i></a>
+                   <a href="#"> <i class="fab fa-google-plus-g icons-brand p-3 rounded-circle"></i></a>
+                   <a href="#"> <i class="fab fa-pinterest icons-brand p-3 rounded-circle"></i>  </a>              
+        
+                    <p class="footer-desc p-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+              
+           </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
